@@ -1,4 +1,8 @@
+
 import streamlit as st
+
+st.set_page_config(page_title="Solar Panel Classifier")
+
 import tensorflow as tf
 from PIL import Image
 import numpy as np
@@ -19,7 +23,7 @@ st.info("Loading model... 📡")
 model = tf.keras.models.load_model(MODEL_PATH, compile=False)
 
 # Streamlit UI
-st.set_page_config(page_title="Solar Panel Classifier")
+
 st.markdown(
     "<div style='text-align:center; font-size:30px; font-weight:bold; color:#fff; background:#f44336; padding:10px; border-radius:10px;'>Solar Panel Dust Classifier</div>", 
     unsafe_allow_html=True
