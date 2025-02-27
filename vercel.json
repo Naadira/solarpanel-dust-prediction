@@ -1,7 +1,8 @@
 {
   "version": 2,
   "builds": [
-    { "src": "start.sh", "use": "@vercel/static" }
+    { "src": "start.sh", "use": "@vercel/static" },
+    { "src": "sample.py", "use": "@vercel/python" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "start.sh" }
